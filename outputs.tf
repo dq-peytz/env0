@@ -7,7 +7,3 @@ output "ionoscloud_k8s_cluster_id" {
    description = "Data Center ID."
    value = "${ionoscloud_k8s_cluster.yb1.id}"
 }
-
-output "kube_config"{
-  value = data.ionoscloud_k8s_cluster.yb1.kube_config
-}
