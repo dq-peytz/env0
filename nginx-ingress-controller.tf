@@ -4,10 +4,6 @@ provider "helm" {
   }
 }
 
-data "ionoscloud_k8s_cluster" "yb1" {
-  id = "${ionoscloud_k8s_cluster.yb1.id}"
-}
-
 resource "null_resource" "getcfg" {
   provisioner "local-exec" {
     command = <<EOT
