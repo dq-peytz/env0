@@ -9,5 +9,5 @@ output "ionoscloud_k8s_cluster_id" {
 }
 
 output "kube_config"{
-  value = data.ionoscloud_k8s_cluster.yb1.kube_config
+  value = "${data.ionoscloud_k8s_cluster.yb1.kube_config}"
 }
